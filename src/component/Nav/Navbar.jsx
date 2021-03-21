@@ -9,6 +9,9 @@ const Navbar = (props) => {
         <div>
             <NavLink to='/users'>Пользователи</NavLink>
         </div>
+        <div>
+            <NavLink to='/objective'>To-Do List</NavLink>
+        </div>
     </div>
 }
 

@@ -28,7 +28,6 @@ let diary_reducer = (state = initialState, action) => {
             }
         }
         case SET_ONE_DIARY_ENTRY: {
-            debugger
             return {
                 ...state,
                 diaryData: updateObjectInArray(state.diaryData, action.diaryID, "id", {title: action.title})
@@ -61,13 +60,11 @@ export let getOneDiaryEntry = (diaryID) => async (dispatch) => {
 }
 
 export let addDiaryEntry = (diary) => async (dispatch) => {
-    debugger
     let response = await DiaryAPI.addDiary(diary)
     dispatch(setDiaryData(response.data))
 }
 
 export let deleteDiaryEntry = (diaryID) => async (dispatch) => {
-    debugger
     let response = await DiaryAPI.deleteDiary(diaryID)
     dispatch(setDiaryData(response.data))
 }

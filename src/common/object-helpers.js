@@ -1,8 +1,11 @@
-export let updateObjectInArray = (items, itemId, objPropName, editObjProps) => {
+export let updateObjectInArray = (items, itemId, objPropName, newObjProps) => {
     return items.map (u => {
-        if (u[objPropName] === itemId) {
-            return {...u, ...editObjProps}
+        if ((u.id).toString() == itemId) {
+            return {...u, ...newObjProps}
         }
         return u
     })
 }
+
+
+

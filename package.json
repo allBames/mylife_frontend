@@ -7,15 +7,29 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "air-datepicker": "^2.2.3",
     "axios": "^0.21.1",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
+    "react-awesome-modal": "^2.0.5",
+    "react-day-picker": "^7.4.8",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-popup": "^0.10.0",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-form": "^8.3.7",
     "redux-thunk": "^2.3.0",
+    "scss": "^0.2.4",
+    "typescript": "^4.1.3",
+    "underscore": "^1.12.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -41,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.32.8"
   }
 }

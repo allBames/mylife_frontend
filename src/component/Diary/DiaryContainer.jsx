@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Diary from "./Diary";
-import {addDiaryEntry, deleteDiaryEntry, getDiary, getOneDiaryEntry} from "../reducer/diary_reducer";
+import {addDiaryEntry, deleteDiaryEntry, getDiary, getOneDiaryEntry} from "../../reducer/diary_reducer";
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 

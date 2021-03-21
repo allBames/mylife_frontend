@@ -1,6 +1,6 @@
 import React from 'react'
 import {Field, reduxForm} from "redux-form";
-import {addDiaryEntry, deleteDiaryEntry, editDiaryEntry, getOneDiaryEntry} from "../reducer/diary_reducer";
+import {addDiaryEntry, deleteDiaryEntry, editDiaryEntry, getOneDiaryEntry} from "../../reducer/diary_reducer";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import {withRouter} from "react-router-dom";
@@ -21,7 +21,7 @@ function DiaryAddForm(props) {
 
 const DiaryReduxAddForm = reduxForm({
     form: 'addDiary',
-    enableReinitialize: true,
+    enableReinitialize: true
 })(DiaryAddForm)
 
 
@@ -34,7 +34,6 @@ class DiaryAdd extends React.Component {
     render() {
 
         const onSubmit = (values) => {
-            debugger
             let diaryID = this.props.match.params.diaryID
             if (diaryID) {
                 this.props.editDiaryEntry(diaryID, values)

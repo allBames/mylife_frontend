@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 const Diary = (props) => {
 
     const deleteDiary = (diaryID) => {
-        debugger
         props.deleteDiaryEntry(diaryID)
     }
 

@@ -24,7 +24,6 @@ export const DiaryAPI = {
     },
 
     editDiary(diaryID, diary) {
-        debugger
         return instance.put(`/api/diary/` + diaryID, diary)
     }
 
